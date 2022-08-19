@@ -4,9 +4,9 @@ const Footer=()=>{
     return(
         <>
         <div className="footer   h-40 w-full bg-slate-900 mb-0">
-          <div className="flex justify-around py-3">
+          <div className="flex justify-around py-9">
              <ul>
-                <li className="text-white text-lg font-bold">
+                <li className="text-white text-lg font-bold pb-3 ">
                 Social
                 </li>
                 <li className="text-white">
@@ -17,7 +17,7 @@ const Footer=()=>{
                 </li>
              </ul>
              <ul>
-                <li className="text-white text-lg font-bold">
+                <li className="text-white text-lg font-bold pb-3">
                 Company
                 </li>
                 <li className="text-white">
@@ -28,7 +28,7 @@ const Footer=()=>{
                 </li>
              </ul>
              <ul>
-                <li className="text-white text-lg font-bold">
+                <li className="text-white text-lg font-bold pb-3">
                  Partner/Reach us
                 </li>
                 <li className="text-white">
@@ -39,7 +39,7 @@ const Footer=()=>{
                 </li>
              </ul>
              <ul>
-                <li className="text-white text-lg font-bold">
+                <li className="text-white text-lg font-bold pb-3">
                 Opportunities
                 </li>
                 <li className="text-white">

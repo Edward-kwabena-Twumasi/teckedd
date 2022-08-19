@@ -10,8 +10,8 @@ const Nav=()=>{
             </div>
 
             <div className='navmenu '>
-                <ul className='flex  items-end gap-5'>
-                    <li className='    text-white  rounded-md' >
+                <ul className='flex  items-end gap-5 font-mono font-extrabold'>
+                    <li className='    text-white  rounded-md ' >
                     Home
                     </li>
                     <li className=' text-white  rounded-md' >
