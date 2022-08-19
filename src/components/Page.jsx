@@ -1,25 +1,29 @@
 
-const Page=()=>{
-
-    return(
-        
-        <div className="page h-80  bg-[#cbd5e1] m-7 rounded-lg self-center shadow-md flex flex-col">
-            <div className="h-2/3  rounded-tl-lg rounded-tr-lg bg-no-repeat bg-center bg-cover" style={{ 
-                    backgroundImage: `url("https://picsum.photos/id/1/200/300")` 
-                    }}>
-
+import Card from '../components/Card';
+import ProductCard from '../components/ProductCard';
+import Paragraph from './Paragraph';
+function Page(props) {
+    return (
+      
+       <div className={"h-screen  flex flex-col pb-5 bg-no-repeat bg-center bg-cover" } style={{ 
+        backgroundImage: `url("https://picsum.photos/id/500/700/900")` 
+        }}>
+         <h1 className='text-white grow-0 h-2 text-2xl mb-10 mt-12 font-bold font-serif'>{props.title}</h1>
+            <div className='grow flex'>
+              <Card extrastyle="transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"/>
+              <Paragraph/>
             </div>
-            <div className="place-self-start h-1/3 p-4">
-                <h1  className="place-self-start ">
-                    Machine learning
-                </h1>
-                <h2 className="place-self-start " >
-                I am a card representing a product about Machine learning
-                </h2>
-         </div>
-        </div>
+            
+            <div className='grow-0 h-40 flex mb-10'>
+              <ProductCard/>
+              <ProductCard/>
+              <ProductCard/>
+              <ProductCard/>
+            </div>
         
+       </div>
+      
     );
-}
-
-export default Page;
+  }
+  
+  export default Page;

@@ -5,16 +5,11 @@ import Page from './components/Page';
 
 function App() {
   return (
-    <div className="App ">
+    <div className="App scroll-smooth">
      <Nav/>
-     <div className="grid grid-cols-3 place-content-center">
-      <Page/>
-      <Page/>
-      <Page/>
-      <Page/>
-      <Page/>
-      <Page/>
-     </div>
+     <Page color="#334155" title="Solar energy"/>
+     <Page color="#334155" title="Artificial intelligence"/>
+     <Page color="#334155" title="Robotics"/>
      <Footer/>
      </div>
   );
