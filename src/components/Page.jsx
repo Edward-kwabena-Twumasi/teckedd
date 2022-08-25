@@ -5,8 +5,8 @@ import Paragraph from './Paragraph';
 function Page(props) {
     return (
       
-       <div className={"h-screen  flex flex-col pb-5 bg-no-repeat bg-center bg-cover" } style={{ 
-        backgroundImage: `url("https://picsum.photos/id/500/700/900")` 
+       <div id={props.id} className={"h-screen  flex flex-col pb-5 bg-no-repeat bg-center bg-cover" } style={{ 
+        backgroundImage: props.bgImage 
         }}>
          <h1 className='text-white grow-0 h-2 text-2xl mb-10 mt-12 font-bold font-serif'>{props.title}</h1>
             <div className='grow flex'>

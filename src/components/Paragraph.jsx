@@ -3,7 +3,7 @@ const Paragraph=(props)=>{
 
     return(
         
-        <div className="paragraph h-80 w-3/5  bg-gradient-to-r from-indigo-500 via-purple-500 to-transparent rounded-lg m-3 shadow-md text-white hover:translate-x-6 transition ease-in-out delay-150 ">
+        <div className="paragraph h-80 w-3/5  bg-gradient-to-r from-transparent via-indigo-500 to-transparent rounded-lg m-3 shadow-md text-white hover:translate-x-6 transition ease-in-out delay-150 ">
            
            
                 <h1  className=" text-xl font-bold">
