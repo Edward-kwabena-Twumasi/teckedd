@@ -5,7 +5,18 @@ import Nav from './components/nav';
 import Page from './components/Page';
 
 let pages=[
-  {"title":"","bgImage":"","description":"","solImage":"","id":"",}
+  {title:"Solar energy",bgImage:"https://picsum.photos/id/400/700/900",
+  description:"Efficient , Cheap , durable and and neatly designed solar panels",
+  id:"Solar",},
+  {title:"Artificil Intelligence",bgImage:"https://picsum.photos/id/500/700/900",
+  description:"Innovative software built for the market with the aim of making systems and application smarter",
+  id:"AI",},
+  {title:"Robotics",bgImage:"https://picsum.photos/id/600/700/900",
+  description:"Social and companion robots built to with super functions, taking the boredom out of robots being seeing as boring agents",
+  id:"Robotics",},
+  {title:"Products",bgImage:"https://picsum.photos/id/700/700/900",
+  description:"We have created some products you need to see",
+  id:"Products",},
 ]
 
 function App() {
@@ -15,10 +26,7 @@ function App() {
      <Home/>
      <div >
      
-      <Page id='Solar' bgImage={`url("https://picsum.photos/id/500/700/900")`} title="Solar energy"/>
-      <Page id='AI' bgImage={`url("https://picsum.photos/id/500/700/900")`} title="Artificial intelligence"/>
-      <Page id='Robotics' bgImage={`url("https://picsum.photos/id/500/700/900")`} title="Robotics"/>
-      <Page id='Products' bgImage={`url("https://picsum.photos/id/500/700/900")`} title="Products"/>
+    { pages.map(page => <Page id={page["id"]} bgImage={`url(${page["bgImage"]})`} title={page["title"]}/> )}
       </div>
      <Footer/>
      </div>
