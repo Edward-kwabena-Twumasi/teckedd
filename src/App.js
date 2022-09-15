@@ -9,24 +9,24 @@ import artificialintelligence from './assets/artificialintelligence.jpg'
 
 let pages=[
   {title:"Solar energy",bgImage:solarenergy,
-  description:"Efficient , Cheap , durable and and neatly designed solar panels",
+  description:"we have engineered Efficient , Cheap , durable and and neatly designed solar panels",
   id:"Solar",
 reverse:false
 },
   {title:"Artificil Intelligence",bgImage:artificialintelligence,
-  description:"Innovative software built for the market with the aim of making systems and application smarter",
+  description:"we have engineered Innovative software built for the market with the aim of making systems and application smarter",
   id:"AI",
   reverse:true
 
 },
   {title:"Robotics",bgImage:artificialintelligence,
-  description:"Social and companion robots built to with super functions, taking the boredom out of robots being seeing as boring agents",
+  description:"we have engineered Social and companion robots built to with super functions, taking the boredom out of robots being seeing as boring agents",
   id:"Robotics",
   reverse:false
 
 },
   {title:"Products",bgImage:solarenergy,
-  description:"We have created some products you need to see",
+  description:" We have created some products you need to see",
   id:"Products",
   reverse:true
 
@@ -40,7 +40,8 @@ function App() {
      <Home/>
      <div >
      
-    { pages.map(page => <Page id={page["id"]} bgImage={`url(${page["bgImage"]})`} title={page["title"]}/> )}
+    { pages.map(page => <Page id={page["id"]} bgImage={`url(${page["bgImage"]})`} title={page["title"]}
+     reverse={page["reverse"]} description={page["description"]}/> )}
       </div>
      <Footer/>
      </div>
