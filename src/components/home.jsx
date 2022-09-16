@@ -41,7 +41,8 @@ const Home=(props)=>{
                 {/* company home intro  section */}
                 <div className='flex flex-col  justify-center  pl-10 ml-10 mt-10'>
                      <h1  className=" text-2xl font-bold mt-20" style={{fontSize:50}}>
-                        Smart,Creative and intelligent
+                        Smart, Creative
+                         and intelligent
                      </h1>
                
                      <h1 className='mt-10 font-bold font-serif border-solid border-white border-2 p-7 py-4 

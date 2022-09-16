@@ -25,9 +25,9 @@ reverse:false
   reverse:false
 
 },
-  {title:"Products",bgImage:solarenergy,
-  description:" We have created some products you need to see",
-  id:"Products",
+  {title:"Software Engineering",bgImage:solarenergy,
+  description:" We have created some Software to tackle several solutions",
+  id:"Software Engineering",
   reverse:true
 
 },
@@ -38,7 +38,7 @@ function App() {
     <div className="App scroll-smooth">
      <Nav/>
      <Home/>
-     <div className='divide-y-2 divide-slate-400' >
+     <div className='' >
      
     { pages.map(page => <Page id={page["id"]} bgImage={`url(${page["bgImage"]})`} title={page["title"]}
      reverse={page["reverse"]} description={page["description"]}/> )}
