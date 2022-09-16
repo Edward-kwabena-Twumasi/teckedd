@@ -3,7 +3,7 @@ const Paragraph=(props)=>{
 
     return(
         
-        <div className="paragraph  w-3/5  text-black backdrop-blur-sm  rounded-md m-2">
+        <div className="paragraph  w-3/5  text-black backdrop-blur-sm  rounded-md m-2 ">
            
            
                

@@ -1,4 +1,6 @@
 import bgvid from '../assets/humanoid.mp4'
+import person from '../assets/solarenergy.jpg'
+
 
 const Home=(props)=>{
 
@@ -8,16 +10,43 @@ const Home=(props)=>{
 
           
 
-           <div className="vidoverlay absolute z-2 w-full h-full flex justify-end">
-            <h1 className='m-5 mt-20 w-2/5 p-3 text-left text-lg font-semibold'>TeckEdd was started to create cutting edge technologies that are futuristic in nature.
-               This is because we believe in the popular saying "If it can be imagined,It can be created"</h1>
-                <div className='flex flex-col justify-start w-3/5 place-items-start  pl-5'>
-                <h1  className=" text-2xl font-bold mt-20" style={{fontSize:60}}>
-                   The Teck company
-                </h1>
-                <h2 className="text-xl  mt-5 text-left" style={{fontSize:30}}>
-              We dare to create cutting edge tech products the beat imagination
-                </h2>
+           <div className="vidoverlay absolute z-2 w-full h-full flex flex-row-reverse justify-between">
+                {/* Company vision card card */}
+               <div className='flex flex-col justify-end'>
+    
+                  <div className='visionintrocard h-40 m-7 rounded-lg shadow-md bg-white '>
+                     <div className='flex justify-start rounded-tr-lg rounded-tl-lg'>
+                  <img src={person} alt='person talking'  className="rounded-full border-solid  border-2 m-3 w-14 h-14 mr-0"></img>
+                  <h1 className=' p-3 text-left text-sm font-bold text-black mt-4'> 
+                  Robert Doe,CEO (Code Den)
+                  </h1>
+                  </div>
+                  <h3 className=' p-3 text-left text-sm font-medium text-slate-400 m-3 mt-0'>
+                  TeckEdd has a promising future.
+                  </h3>
+                  </div>
+                  <div className='visionintrocard h-40 m-7 rounded-lg shadow-md bg-white '>
+                     <div className='flex justify-start rounded-tr-lg rounded-tl-lg'>
+                  <img src={person} alt='person talking'  className="rounded-full border-solid  border-2 m-3 w-14 h-14 mr-0"></img>
+                  <h1 className=' p-3 text-left text-sm font-bold text-black mt-4'> 
+                  Edward K. Twumasi,CEO
+                  </h1>
+                  </div>
+                  <h3 className=' p-3 text-left text-sm font-medium text-slate-400 m-3 mt-0'>
+                  TeckEdd believes in the popular saying "If it can be imagined,It can be created"
+                  </h3>
+                  </div>
+               </div>
+         
+                {/* company home intro  section */}
+                <div className='flex flex-col  justify-center  pl-10 ml-10 mt-10'>
+                     <h1  className=" text-2xl font-bold mt-20" style={{fontSize:50}}>
+                        Smart,Creative and intelligent
+                     </h1>
+               
+                     <h1 className='mt-10 font-bold font-serif border-solid border-white border-2 p-7 py-4 
+                  rounded-full  self-center  hover:bg-white hover:text-dark hover:scale-125 transition duration-150 ease-in-out '>Explore products</h1>
+            
                 </div>
               
            </div>
