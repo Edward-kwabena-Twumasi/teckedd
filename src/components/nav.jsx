@@ -3,7 +3,7 @@
 const Nav=()=>{
 
     return(
-        <div className='navBar  h-30  text-white  w-full  mx-auto absolute z-10 flex flex-row  p-5 items-center hover:bg-white hover:text-black' >
+        <div className='navBar  h-30  text-white  w-full  mx-auto absolute z-50 flex flex-row  p-5 items-center hover:bg-white hover:text-black' >
             <div className='navlabel flex items-center'>
                 
                 <h4 className='title  hidden lg:block md:block font-bold'>T e c k E d d</h4>
@@ -12,7 +12,7 @@ const Nav=()=>{
             <div className='navmenu ml-60'>
                 <ul className='flex  items-end gap-8 font-mono font-extrabold'>
                     <li className='    hover:text-[#cbd5e1] p-2 rounded-md ' >
-                    Smart Wear
+                    Software 
                     </li>
                     <li className='   hover:text-[#cbd5e1] p-2 rounded-md' >
                     <a href='#AI'>AI</a> 

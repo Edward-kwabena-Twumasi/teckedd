@@ -6,11 +6,11 @@ const Home=(props)=>{
 
     return(
         
-        <div className=" home z-0 h-screen w-full  text-white">
+        <div className=" home z-40 h-screen w-full  text-white">
 
           
 
-           <div className="vidoverlay absolute z-2 w-full h-full flex flex-row-reverse justify-between">
+           <div className="vidoverlay absolute z-10 w-full h-full flex flex-row-reverse justify-between">
                 {/* Company vision card card */}
                <div className='flex flex-col justify-end'>
     
@@ -39,19 +39,23 @@ const Home=(props)=>{
                </div>
          
                 {/* company home intro  section */}
-                <div className='flex flex-col  justify-center  pl-10 ml-10 mt-10'>
-                     <h1  className=" text-2xl font-bold mt-20" style={{fontSize:50}}>
+                <div className='flex flex-col  justify-center ml-10  mt-10'>
+                     <h1  className=" text-2xl font-bold mt-20 text-start text-slate-500" style={{fontSize:52}}>
                         Smart, Creative
-                         and intelligent
+                         
+                     </h1>
+                     <h1  className=" text-2xl font-bold mt-5 text-start" style={{fontSize:50}}>
+                       and intelligent
+                         
                      </h1>
                
                      <h1 className='mt-10 font-bold font-serif border-solid border-white border-2 p-7 py-4 
-                  rounded-full  self-center  hover:bg-white hover:text-dark hover:scale-125 transition duration-150 ease-in-out '>Explore products</h1>
+                  rounded-full  text-center  hover:bg-black hover:text-white hover:scale-100 transition duration-150 ease-in-out '>Explore products</h1>
             
                 </div>
               
            </div>
-           <video src={bgvid} autoPlay loop className="w-screen h-full object-cover"/>
+           <video src={bgvid} autoPlay loop className="w-screen h-full object-cover absolute z-5"/>
                 
          </div>
        
